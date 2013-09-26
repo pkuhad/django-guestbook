@@ -6,5 +6,11 @@
     <input type='submit' value='Submit' />
 </form>
 
+Guest Posts
+
+{% for guest_post in guest_posts %}
+    Name : {{ guest_post.name }}
+    Message : {{ guest_post.message }}
+{% endfor %}
 </body>
 </html>
