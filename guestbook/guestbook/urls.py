@@ -11,16 +11,16 @@ from django.conf.urls import patterns
 from django.conf.urls import url
 from django.views.generic import TemplateView
 
-from .views import ContactFormView
+from .views import GuestbookFormView
 
 
 urlpatterns = patterns('',
                        url(r'^$',
-                           ContactFormView.as_view(),
-                           name='contact_form'),
+                           GuestbookFormView.as_view(),
+                           name='guestbook_form'),
                        url(r'^sent/$',
                            TemplateView.as_view(
-                               template_name='contact_form/contact_form_sent.html'
+                               template_name='guestbook/contact_form_sent.html'
                                ),
-                           name='contact_form_sent'),
+                           name='guestbook_form_submitted'),
                        )

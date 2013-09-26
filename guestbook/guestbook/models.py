@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext as _
 
-class Newsletter(models.Model):
+class GuestBook(models.Model):
     
     message = models.TextField(verbose_name=_(u'Message'), blank=True)
     name = models.CharField(max_length=150, verbose_name=_(u'Name'))
