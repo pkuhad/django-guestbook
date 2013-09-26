@@ -8,7 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'guestbook.views.home', name='home'),
     
-    url(r'^guestbook/', include('guestbook.guestbook.urls')),
+    url(r'^guestbook/', include('guestbook.guestbook.urls', namespace='guestbook')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

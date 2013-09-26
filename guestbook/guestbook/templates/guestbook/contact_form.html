@@ -7,10 +7,12 @@
 </form>
 
 Guest Posts
+<hr/>
 
 {% for guest_post in guest_posts %}
-    Name : {{ guest_post.name }}
-    Message : {{ guest_post.message }}
+    Name : {{ guest_post.name }} <br/>
+    Message : {{ guest_post.message }} <br/>
+    <hr/>
 {% endfor %}
 </body>
 </html>

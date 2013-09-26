@@ -7,6 +7,9 @@ class GuestBook(models.Model):
     name = models.CharField(max_length=150, verbose_name=_(u'Name'))
     timestamp = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        ordering = ['-timestamp']
+
     def __unicode__(self):
         return 'Message by %s' % self.name
 
